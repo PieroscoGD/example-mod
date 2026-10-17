@@ -16,3 +16,8 @@ jobs:
           bindings: geode-sdk/bindings
           bindings-ref: main
           target: Android64
+      - name: Save the mod file
+        uses: actions/upload-artifact@v4
+        with:
+          name: mod-android64
+          path: "**/*.geode"
