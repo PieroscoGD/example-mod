@@ -1,17 +1,12 @@
 {
-	"geode": "$GEODE_VERSION",
+	"geode": "5.11.2",
 	"gd": {
-		"win": "2.2081",
-		"android": "2.2081",
-		"mac": "2.2081",
-		"ios": "2.2081"
+		"win": "*",
+		"android": "*"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
-	"dependencies": {
-		"geode.node-ids": ">=v1.23.3"
-	}
+	"id": "pieroscogd.modmenu",
+	"name": "Pierosco Mod Menu",
+	"version": "v1.0.0",
+	"developer": "PieroscoGD",
+	"description": "Simple mod menu with noclip and speedhack."
 }
