@@ -24,9 +24,9 @@ class $modify(MyPauseLayer, PauseLayer) {
         auto pl = PlayLayer::get();
         if (!pl) return;
 
-        float t = pl->timeForXPos(pl->m_player1->getPositionX());
+        double t = pl->m_gameState.m_levelTime;
         float offset = pl->m_levelSettings->m_songOffset;
-        unsigned int ms = static_cast<unsigned int>((t + offset) * 1000.f);
+        unsigned int ms = static_cast<unsigned int>((t + offset) * 1000.0);
 
         FMODAudioEngine::sharedEngine()->setMusicTimeMS(ms, true, 0);
 
